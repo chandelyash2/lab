@@ -11,7 +11,7 @@ const PdfDownload: React.FC<PdfDownlaodProp> = ({ rootElementId }) => {
     console.log(input.offsetWidth-100, "input.offsetWidth");
     html2canvas(input, { scale: 2 }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF("p", "mm", [input.offsetWidth-50, input.offsetHeight]);
+      const pdf = new jsPDF("p", "mm", 'a4');
       const imgWidth = pdf.internal.pageSize.getWidth();
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       // const pdfWidth = pdf.internal.pageSize.getWidth();
