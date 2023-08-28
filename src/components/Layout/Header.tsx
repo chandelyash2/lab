@@ -7,7 +7,7 @@ const Header = () => {
         <span className="font-bold">Asha Diagnostic Centre</span>
         <span>Opposite Cvil Hospital Nadaun </span>
         <span>Pincode 177033</span>
-        <span>Registeration Number:2429</span>
+        <span>Registration Number:2429</span>
         <span>Email:kumarshubhi906@gmail.com</span>
       </div>
     </div>
