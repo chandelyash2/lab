@@ -20,7 +20,7 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
           {selectedReport.length > 0 ? (
             <div aria-label="Report Content" className="flex flex-col gap-2">
               <div className="flex relative justify-center before:content-[''] before:absolute before:left-0 before:top-3 before:w-full before:h-1 before:bg-[#1f7fc3] before:z-0">
-                <span className="bg-white relative px-3.5 font-bold text-xs ">
+                <span className="bg-white relative px-3 font-bold text-xs ">
                   REPORT
                 </span>
               </div>
@@ -35,13 +35,13 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
                 </div>
               </div>
               <div>
-                <span className=" flex justify-center border w-full border-black p-2 font-bold text-sm">
+                <span className=" flex justify-center border w-full border-black p-1 font-bold text-sm">
                   CLINICAL BIOCHEMISTRY
                 </span>
               </div>
               <div
                 aria-label="Units Div"
-                className="grid grid-cols-4 py-2 border-b border-black text-center text-sm"
+                className="grid grid-cols-4 border-b border-black text-center text-xs"
               >
                 {TestTableHeader.map((item, i) => (
                   <span key={i}>{item}</span>
@@ -52,7 +52,7 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
                 {selectedReport[0].fields.map((item, i) => (
                   <div
                     key={i}
-                    className="grid grid-cols-4 py-1 text-center items-center "
+                    className="grid grid-cols-4 text-center items-center "
                   >
                     <span className="text-xs">{item.name}</span>
                     <span>
