@@ -94,12 +94,6 @@ export const SampleFields = [
         // method: "Calculated",
       },
       {
-        name: "Alkaline Phosphatase (ALP)",
-        unit: "U/L",
-        bio: "40-150",
-        // method: "Para-Nitrophenyl-phospahate",
-      },
-      {
         name: "MCV",
         unit: "fl",
         bio: "81-101",

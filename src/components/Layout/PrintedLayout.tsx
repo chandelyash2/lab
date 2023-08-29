@@ -12,10 +12,10 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
   return (
     <div>
       <div
-        className="m-6 absolute left-[25%] w-[50%] p-2 border-8 border-[#1f7fc3]"
+        className="m-6 absolute left-[25%] w-[50%] p-2 "
         id="test"
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col border-4 border-[#1f7fc3] p-2">
           <Header />
           {selectedReport.length > 0 ? (
             <div aria-label="Report Content" className="flex flex-col gap-2">
@@ -24,11 +24,11 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
                   REPORT
                 </span>
               </div>
-              <div className="border p-4 border-black">
-                <div className="grid grid-cols-2 gap-2 items-center">
+              <div className="border p-1 border-black">
+                <div className="grid grid-cols-2 items-center">
                   {ReportDetailFields.map((item, i) => (
                     <span className="w-200px flex justify-between text" key={i}>
-                      <span className="text-sm">{item}:</span>
+                      <span className="text-xs">{item}:</span>
                       <input placeholder="-" />
                     </span>
                   ))}
@@ -37,9 +37,6 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
               <div>
                 <span className=" flex justify-center border w-full border-black p-2 font-bold text-sm">
                   CLINICAL BIOCHEMISTRY
-                </span>
-                <span className="flex justify-center border w-full border-black p-2 font-bold text-sm">
-                  ASHA CLINIC
                 </span>
               </div>
               <div
@@ -57,12 +54,12 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
                     key={i}
                     className="grid grid-cols-4 py-1 text-center items-center "
                   >
-                    <span className="text-sm">{item.name}</span>
+                    <span className="text-xs">{item.name}</span>
                     <span>
                       <input placeholder="-" className="text-center" />
                     </span>
-                    <span className="text-sm">{item.unit}</span>
-                    <span className="text-sm">{item.bio}</span>
+                    <span className="text-xs">{item.unit}</span>
+                    <span className="text-xs">{item.bio}</span>
                   </div>
                 ))}
               </div>
