@@ -41,7 +41,7 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
               </div>
               <div
                 aria-label="Units Div"
-                className="grid grid-cols-4 border-b border-black text-center text-xs"
+                className="grid grid-cols-4 border-b border-black text-center text-xs py-2"
               >
                 {TestTableHeader.map((item, i) => (
                   <span key={i}>{item}</span>
