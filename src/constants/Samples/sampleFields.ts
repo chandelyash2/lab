@@ -78,7 +78,7 @@ export const SampleFields = [
       {
         name: "Haemoglobin",
         unit: "g/dL",
-        bio: "0.2-1.2",
+        bio: "11.0-16.0",
         // method: "Diazonium Salt",
       },
       {
