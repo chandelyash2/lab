@@ -1,11 +1,17 @@
 export const reportType = [
   "LFT",
   "eGFR",
-  "KFT",
+  "RFT",
   "Lipid Profile",
   "WB-EDTA",
   "Thyroid Profile I",
   "CUE",
+  "Serological Examination",
+  "Serology",
+  "Bio Chemistry",
+  "Widal Test",
+  "Blood Group"
+
 ];
 
 export const ReportDetailFields = [

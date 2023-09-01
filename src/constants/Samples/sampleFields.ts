@@ -73,7 +73,7 @@ export const SampleFields = [
   },
   {
     key: "WB-EDTA",
-    name: "WB-EDTA",
+    name: "Complete Blood Count",
     fields: [
       {
         name: "Haemoglobin",
@@ -120,7 +120,7 @@ export const SampleFields = [
       {
         name: "Platelet Count",
         unit: "10^9/L",
-        bio: "150-4102",
+        bio: "150-410",
         // method: "Bromcresol Green",
       },
       {
@@ -135,60 +135,60 @@ export const SampleFields = [
         bio: "40-70",
         // method: "Calculated",
       },
-      {
-        name: "Neutrophil-Absolute Count",
-        unit: "10^9/L",
-        bio: "2.0-7.0",
-        // method: "Calculated",
-      },
+      // {
+      //   name: "Neutrophil-Absolute Count",
+      //   unit: "10^9/L",
+      //   bio: "2.0-7.0",
+      //   // method: "Calculated",
+      // },
       {
         name: "Lymphocytes",
         unit: "%",
         bio: "20-40",
         // method: "Calculated",
       },
-      {
-        name: "Lymphocytes-Absolute Count",
-        unit: "10^9/L",
-        bio: "1.0-3.0",
-        // method: "Calculated",
-      },
+      // {
+      //   name: "Lymphocytes-Absolute Count",
+      //   unit: "10^9/L",
+      //   bio: "1.0-3.0",
+      //   // method: "Calculated",
+      // },
       {
         name: "Monocytes",
         unit: "%",
         bio: "2-10",
         // method: "Calculated",
       },
-      {
-        name: "Monocytes-Absolute Count",
-        unit: "10^9/L",
-        bio: "0.2-1.0",
-        // method: "Calculated",
-      },
+      // {
+      //   name: "Monocytes-Absolute Count",
+      //   unit: "10^9/L",
+      //   bio: "0.2-1.0",
+      //   // method: "Calculated",
+      // },
       {
         name: "Eosinophils",
         unit: "%",
         bio: "1-6",
         // method: "Calculated",
       },
-      {
-        name: "Eosinophils-Absolute Count",
-        unit: "10^9/L",
-        bio: "0.02-0.5",
-        // method: "Calculated",
-      },
+      // {
+      //   name: "Eosinophils-Absolute Count",
+      //   unit: "10^9/L",
+      //   bio: "0.02-0.5",
+      //   // method: "Calculated",
+      // },
       {
         name: "Basophils",
         unit: "%",
         bio: "0-2",
         // method: "Calculated",
       },
-      {
-        name: "Basophils-Absolute Count",
-        unit: "10^9/L",
-        bio: "0.0-0.3",
-        // method: "Calculated",
-      },
+      // {
+      //   name: "Basophils-Absolute Count",
+      //   unit: "10^9/L",
+      //   bio: "0.0-0.3",
+      //   // method: "Calculated",
+      // },
       {
         name: "Others",
         unit: "%",
@@ -234,8 +234,8 @@ export const SampleFields = [
     ],
   },
   {
-    key: "KFT",
-    name: "Kidney Function Test (KFT) - I",
+    key: "RFT",
+    name: "Renal Function Test (RFT) - I",
     fields: [
       {
         name: "Creatinine",
@@ -256,23 +256,29 @@ export const SampleFields = [
         // method: "Calculated",
       },
       {
-        name: "Sodium (Na)",
-        unit: "mmol/L",
-        bio: "135-145",
-        // method: "Para-Nitrophenyl-phospahate",
+        name: "Calcium",
+        unit: "mg/dl",
+        bio: "8.4-11",
+        // method: "Calculated",
       },
-      {
-        name: "Potassium (K)",
-        unit: "mmol/L",
-        bio: "3.8 - 5.2",
-        // method: "NADH w/0 P-5'-P",
-      },
-      {
-        name: "Chloride(CL)",
-        unit: "mmol/L",
-        bio: "98-108",
-        // method: "NADH w/o P-5’-P",
-      },
+      // {
+      //   name: "Sodium (Na)",
+      //   unit: "mmol/L",
+      //   bio: "135-145",
+      //   // method: "Para-Nitrophenyl-phospahate",
+      // },
+      // {
+      //   name: "Potassium (K)",
+      //   unit: "mmol/L",
+      //   bio: "3.8 - 5.2",
+      //   // method: "NADH w/0 P-5'-P",
+      // },
+      // {
+      //   name: "Chloride(CL)",
+      //   unit: "mmol/L",
+      //   bio: "98-108",
+      //   // method: "NADH w/o P-5’-P",
+      // },
     ],
   },
   {
@@ -464,6 +470,144 @@ export const SampleFields = [
         unit: "/hpf",
         bio: "Absent",
         // method: "Para-Nitrophenyl-phospahate",
+      },
+    ],
+  },
+  {
+    key: "Serological Examination",
+    name: "Serological Examination",
+    fields: [
+      {
+        name: "Hbs Ag",
+        unit: "",
+        bio: "",
+        // method: "Diazonium Salt",
+      },
+      {
+        name: "HCV",
+        unit: "",
+        bio: "",
+        // method: "Diazo Reaction",
+      },
+      {
+        name: "HIV 1/2",
+        unit: "",
+        bio: "",
+        // method: "Diazo Reaction",
+      },
+      {
+        name: "VDRL (STS)",
+        unit: "",
+        bio: "",
+        // method: "Diazo Reaction",
+      },
+    ],
+  },
+  {
+    key: "Serology",
+    name: "Serology",
+    fields: [
+      {
+        name: "Rheumatoid Factor",
+        unit: "",
+        bio: "",
+        // method: "Diazonium Salt",
+      },
+      {
+        name: "CRP",
+        unit: "",
+        bio: "",
+        // method: "Diazo Reaction",
+      },
+      {
+        name: "Scrub Typhus",
+        unit: "",
+        bio: "",
+        // method: "Diazo Reaction",
+      },
+      {
+        name: "Dengu NSI",
+        unit: "",
+        bio: "",
+        // method: "Diazo Reaction",
+      },
+      {
+        name: "Dengu IGG/IGM",
+        unit: "",
+        bio: "",
+        // method: "Diazo Reaction",
+      },
+      {
+        name: "Blood MP",
+        unit: "",
+        bio: "",
+        // method: "Diazo Reaction",
+      },
+    ],
+  },
+  {
+    key: "Bio Chemistry",
+    name: "Bio Chemistry",
+    fields: [
+      {
+        name: "Sugar Fasting",
+        unit: "mg/dL",
+        bio: "70-110",
+        // method: "Diazonium Salt",
+      },
+      {
+        name: "Sugar (PP/R)",
+        unit: "mg/dL",
+        bio: "110–160",
+        // method: "Diazo Reaction",
+      },
+    ],
+  },
+  {
+    key: "Widal Test",
+    name: "Bio Chemistry",
+    fields: [
+      {
+        name: "Typhi O",
+        unit: "",
+        bio: "1:80 & Above Significant",
+        // method: "Diazonium Salt",
+      },
+      {
+        name: "Typhi H",
+        unit: "",
+        bio: "1:80 & Above Significant",
+        // method: "Diazo Reaction",
+      },
+      {
+        name: "Paratyphi AH",
+        unit: "",
+        bio: "1:80 & Above Significant",
+        // method: "Diazo Reaction",
+      },
+      {
+        name: "Paratyphi BH",
+        unit: "",
+        bio: "1:80 & Above Significant",
+        // method: "Diazo Reaction",
+      },
+    ],
+  },
+  {
+    key: "Blood Group",
+    name: "Blood Group ABO & RH Type",
+    fields: [
+      {
+        name: "ABO GROUP",
+        unit: "",
+        bio: "",
+        // method: "Diazonium Salt",
+      },
+      {
+        name: "RH FACTOR",
+        unit: "",
+        bio: "",
+        // method: "Diazo Reaction",
       },
     ],
   },

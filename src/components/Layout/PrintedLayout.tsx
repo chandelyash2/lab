@@ -12,7 +12,7 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
   return (
     <div>
       <div
-        className="m-6 absolute left-[25%] w-[50%] p-2 "
+        className="m-6 absolute left-[25%] w-[50%] p-1 "
         id="test"
       >
         <div className="flex flex-col border-4 border-[#1f7fc3] p-2">
