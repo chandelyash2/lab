@@ -12,10 +12,10 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
   return (
     <div>
       <div
-        className="m-6 absolute left-[25%] w-[50%] p-1 "
+        className="m-6 absolute left-[25%] w-[50%] p-2"
         id="test"
       >
-        <div className="flex flex-col border-4 border-[#1f7fc3] p-2">
+        <div className="flex flex-col border-4 border-[#1f7fc3] p-3">
           <Header />
           {selectedReport.length > 0 ? (
             <div aria-label="Report Content" className="flex flex-col gap-2">
@@ -29,7 +29,7 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
                   {ReportDetailFields.map((item, i) => (
                     <span className="w-200px flex justify-between text" key={i}>
                       <span className="text-xs">{item}:</span>
-                      <input placeholder="-" />
+                      <input placeholder="-"/>
                     </span>
                   ))}
                 </div>
