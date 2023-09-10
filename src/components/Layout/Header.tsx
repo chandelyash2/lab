@@ -8,7 +8,7 @@ const Header = () => {
         Centre
       </span>
       <div className="flex flex-col text-sm ">
-        <span>Opposite Cvil Hospital Nadaun </span>
+        <span>Opposite Civil Hospital Nadaun </span>
         <span>Pincode 177033</span>
         <span>Regd No.:2429</span>
         <span>Phone:7018469906</span>
