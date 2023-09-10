@@ -12,7 +12,7 @@ export const SampleFields = [
       {
         name: "Bilirubin Direct",
         unit: "mg/dL",
-        bio: "0-10.5",
+        bio: "0-0.5",
         // method: "Diazo Reaction",
       },
       {

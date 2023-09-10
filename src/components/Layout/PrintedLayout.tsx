@@ -27,15 +27,15 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
               <div className="border p-1 border-black">
                 <div className="grid grid-cols-2 items-center">
                   {ReportDetailFields.map((item, i) => (
-                    <span className="w-200px flex justify-between text" key={i}>
-                      <span className="text-xs">{item}:</span>
-                      <input placeholder="-"/>
+                    <span className="flex justify-between text" key={i}>
+                      <span className="text-xs mt-1">{item}:</span>
+                      <input placeholder="-" className="text-xs h-[30px] text-semibold"/>
                     </span>
                   ))}
                 </div>
               </div>
               <div>
-                <span className=" flex justify-center border w-full border-black p-1 font-bold text-sm">
+                <span className=" flex justify-center border w-full border-black p-2 font-bold text-sm">
                   CLINICAL BIOCHEMISTRY
                 </span>
               </div>
@@ -56,7 +56,7 @@ const PrintedLayout: React.FC<PrintedLayoutProps> = ({ selected }) => {
                   >
                     <span className="text-xs">{item.name}</span>
                     <span>
-                      <input placeholder="-" className="text-center" />
+                      <input placeholder="-" className="text-xs h-[30px] text-semibold text-center" />
                     </span>
                     <span className="text-xs">{item.unit}</span>
                     <span className="text-xs">{item.bio}</span>
